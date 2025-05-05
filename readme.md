@@ -1,24 +1,36 @@
-﻿<a name="readme-top"/>
+<a name="readme-top">
 
 <br/>
 
 <br />
 <div align="center">
   <a href="https://github.com/zyx-0314/">
-    <img src="./docs/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+  <!-- TODO: If you want to add logo or banner you can add it here -->
+    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
-
-  <h3 align="center">Module Samples</h3>
+<!-- TODO: Change Title to the name of the title of your Project -->
+  <h3 align="center">Title</h3>
+</div>
+<!-- TODO: Make a short description -->
+<div align="center">
+  Short Description. (Optional)
 </div>
 
 <br />
 
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/AD_ET-Module-2)
+<!-- TODO: Change the zyx-0314 into your github username  -->
+<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
+
+![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/AD-CI4-Template-Project)
+
+[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
 
 ---
 
 <br />
+<br />
 
+<!-- TODO: If you want to add more layers for your readme -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -34,7 +46,7 @@
       </ol>
     </li>
     <li>
-      <a href="#rules-and-principles">Rules and Principles</a>
+      <a href="#rule,-practices-and-principles">Rules, Practices and Principles</a>
     </li>
     <li>
       <a href="#resources">Resources</a>
@@ -46,100 +58,94 @@
 
 ## Overview
 
-This project serves as playground for sample coding of php fundamentals tackled in module 3-4.
+<!-- TODO: To be changed -->
+<!-- The following are just sample -->
 
-<br />
+Description of the project in details.
 
 ### Key Components
-- PHP user defined function
-- PHP system defined function
-- Array
-- Create, display and delete
-- Session
+
+<!-- TODO: List of Key Components -->
+<!-- The following are just sample -->
+
+- Authentication & Authorization
+- CRUD Operations for Invetory System
 
 ### Technology
+
+<!-- TODO: List of Technology Used -->
+#### Language
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-474A8A?style=for-the-badge&logo=php&logoColor=white)
-![BootStrap](https://img.shields.io/badge/Bootstrap-913399?style=for-the-badge&logo=php&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-<div align="right">(<a href="#readme-top">back to top</a>)</div>
+#### Framework/Library
+![CodeIgniter](https://img.shields.io/badge/CodeIgniter-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
----
+#### Databases
+![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 
-## How to
+#### Deployment
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-### Fork
-You can make your own copy of the project by Forking the project.
+## Rules, Practices and Principles
 
-<img src="./docs/img/fork.png" alt="Nyebe" width="1000" height="100">
+<!-- Do not Change this -->
 
-You can contribute by doing Pull Request after you modify the project. 
+1. Always use `AD-` in the front of the Title of the Project for the Subject followed by your custom naming.
+2. Do not rename `.php` files if they are pages; always use `index.php` as the filename.
+3. Add `.component` to the `.php` files if they are components code; example: `footer.component.php`.
+4. Add `.util` to the `.php` files if they are utility codes; example: `account.util.php`.
+5. Place Files in their respective folders.
+6. Different file naming Cases
+   | Naming Case | Type of code         | Example                           |
+   | ----------- | -------------------- | --------------------------------- |
+   | Pascal      | Utility              | Accoun.util.php                   |
+   | Camel       | Components and Pages | index.php or footer.component.php |
+8. Renaming of Pages folder names are a must, and relates to what it is doing or data it holding.
+9. Use proper label in your github commits: `feat`, `fix`, `refactor` and `docs`
+10. File Structure to follow below.
 
-<br/>
-<br/>
+```
+AD-ProjectName
+└─ assets
+|   └─ css
+|   |   └─ name.css
+|   └─ img
+|   |   └─ name.jpeg/.jpg/.webp/.png
+|   └─ js
+|       └─ name.js
+└─ components
+|   └─ name.component.php
+└─ pages
+|  └─ pageName
+|     └─ assets
+|     |  └─ css
+|     |  |  └─ name.css
+|     |  └─ img
+|     |  |  └─ name.jpeg/.jpg/.webp/.png
+|     |  └─ js
+|     |     └─ name.js
+|     └─ index.php
+└─ utils
+|   └─ Name.utils.php
+└─ index.php
+└─ readme.md
+```
+> The following should be renamed: name.css, name.js, name.jpeg/.jpg/.webp/.png, name.component.php(but not the part of the `component.php`), Name.utils.php(but not the part of the `utils.php`)
 
-### Make an Issue
-If you encounter any issues or bugs, please create an issue on the GitHub repository.
+## Resources
 
-Steps:
+<!-- TODO: Add References -->
 
-1. Find the Issue Tab
-
-<img src="./docs/img/Issue.png" alt="Nyebe" width="1000" height="100">
-
-2. Find the New Issue Button
-
-<img src="./docs/img/new-issue.png" alt="Nyebe" width="130" height="100">
-
-4. Add a Short Title
-
-<img src="./docs/img/issue-title.png" alt="Nyebe" width="1800" height="100">
-
-6. Add Descriptions
-
-<img src="./docs/img/issue-description.png" alt="Nyebe" width="1800" height="340">
-
-Format of Description
-   i.   Problem - Describe the problem
-   ii.  Step-by-Step of how the problem occur, if possible with screen-shots
-   iii. if there is variables, include at the bottom
-
----
-
-Format sample:
-
-The problem is something like this and it does this but should do this, im using mac laptop and i use this kind of ide.
-
-Step-by-Step:
-Step 1: Open the terminal
-
-Step 2: Choose option 2
-
-Step 3: Enter Values
-
-Step 4: Problem Occur here that should be something like this but it does this.
-
-Variables:
-the values I placed are;
-1 - for registration
-2 - Dela Cruz for Last name
-
----
-
-7. Submit
-
-<img src="./docs/img/submit-issue.png" alt="Nyebe" width="180" height="60">
-
-<br/>
-<br/>
-
-### Follow and Star
-If you find this project interesting, consider giving it a star on GitHub. You can also follow the repository for updates and notifications.
-
-<img src="./docs/img/follow.png" alt="Nyebe" width="250" height="100">
-
-<img src="./docs/img/star.png" alt="Nyebe" width="450" height="50">
-
-<br />
-
-<div align="right">(<a href="#readme-top">back to top</a>)</div>
+| Title        | Purpose                                                                       | Link          |
+| ------------ | ----------------------------------------------------------------------------- | ------------- |
+| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
