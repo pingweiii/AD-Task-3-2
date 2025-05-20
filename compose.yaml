@@ -1,0 +1,17 @@
+services:
+  web-app-php:
+    build: .
+    container_name: web-app-php-1
+    # depends_on:
+    #   - postgres
+    #   - mongo
+    # networks: [ backend ]
+    develop:
+      watch:
+        - path: .
+          target: /var/www/html
+          action: sync
+        - path: ./composer.json
+          action: rebuild
+        - path: ./composer.lock
+          action: rebuild
