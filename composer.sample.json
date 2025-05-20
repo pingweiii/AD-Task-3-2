@@ -1,0 +1,22 @@
+// TODO change the name to your user/name of your project
+// TODO change the authors: name to your developers name
+// TODO change the authors: email to your developers email
+{
+    "name": "ramir/php-pages",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Ramir\\PhpPages\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zyx-0314-FJorn",
+            "email": "ramirezian037@gmail.com"
+        }
+    ],
+    "scripts": {
+        "start": "php -S localhost:8000 router.php"
+    },
+    "require": {}
+}
