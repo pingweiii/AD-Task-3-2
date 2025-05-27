@@ -59,3 +59,15 @@ composer install
 php -S localhost:8000 router.php
 ```
 > note you can change `8000` if you prefer different port ranges from `3000-9999`.
+
+# Checking work Using Composer
+1. Clone Repository
+2. Install vendors
+```cmd
+composer install
+```
+3. Run the system with the command below under your terminal. if you don't know how to open or it was hidden use keyboard shortcut keys of `ctrl` + `~`, beside the number 1)
+```cmd
+php -S localhost:8000 router.php
+```
+> you can change `8000` if you prefer different port ranges from `3000-9999`.
