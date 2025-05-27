@@ -2,7 +2,7 @@ FROM php:8.3.21-fpm-alpine3.20
 
 ENV NODE_ENV=development
 
-RUN addgroup -S developer && adduser -S zyx -G developer
+RUN addgroup -S developer && adduser -S yourUsernameHere -G developer
 
 WORKDIR /var/www/html
 
@@ -13,8 +13,12 @@ RUN docker-php-ext-enable mongodb
 
 COPY --from=composer:2.6 /usr/bin/composer /usr/local/bin/composer
 
-USER zyx
+COPY . /var/www/html/
+
+USER yourUsernameHere
 
 EXPOSE 8000
 
-CMD ["compose", "start"]
+RUN composer install
+
+CMD ["php", "-S", "0.0.0.0:8000", "router.php"]
