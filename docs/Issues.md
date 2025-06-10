@@ -18,3 +18,11 @@ ports:
 2. find the port that is open
 3. close it
 4. rerun `compose up`
+
+# Docker not working
+## VM Utilization Issue (For Intel User Common Issue)
+1. Open Bios
+2. Look for `virtualization`
+3. Swich on
+4. `Apply and Save`
+5. Restart PC
