@@ -1,11 +1,6 @@
 {
     "name": "your-username-here/project-name-here",
     "type": "project",
-    "autoload": {
-        "psr-4": {
-            "Ramir\\PhpPages\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "your-username-here",
