@@ -54,7 +54,7 @@ chdir(BASE_PATH);
 ```cmd
 composer install
 ```
-8. Run the system with the command below under your terminal. if you don't know how to open or it was hidden use keyboard shortcut keys of `ctrl` + `~`, beside the number 1)
+8. Run the system with the command below under your terminal. if you don't know how to open or it was hidden use keyboard shortcut keys of `ctrl` + `~`, beside the number 1
 ```cmd
 php -S localhost:8000 router.php
 ```
@@ -66,7 +66,7 @@ php -S localhost:8000 router.php
 ```cmd
 composer install
 ```
-3. Run the system with the command below under your terminal. if you don't know how to open or it was hidden use keyboard shortcut keys of `ctrl` + `~`, beside the number 1)
+3. Run the system with the command below under your terminal. if you don't know how to open or it was hidden use keyboard shortcut keys of `ctrl` + `~`, beside the number 1
 ```cmd
 php -S localhost:8000 router.php
 ```
