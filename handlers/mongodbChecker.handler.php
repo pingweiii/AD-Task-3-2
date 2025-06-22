@@ -1,4 +1,7 @@
 <?php
+
+REQUIRE_ONCE __DIR__ . '/../utils/envSetter.util.php';
+
 try {
     $mongo = new MongoDB\Driver\Manager("mongodb://host.docker.internal:27111");
 
