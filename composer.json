@@ -1,0 +1,14 @@
+{
+    "name": "pingweiii/ad-meeting-calendar",
+    "type": "project",
+    "authors": [
+        {
+            "name": "pingweiii",
+            "email": "pwchen31@gmail.com"
+        }
+    ],
+    "scripts": {
+        "start": "php -S localhost:8000 router.php"
+    },
+    "require": {}
+}
