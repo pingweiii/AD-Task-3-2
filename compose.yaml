@@ -37,8 +37,8 @@ services:
     container_name: ad-meeting-calendar-postgresql
     restart: always
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: pingweiii
+      POSTGRES_PASSWORD: tariqhaliban@0
       POSTGRES_DB: calendardb3
     ports:
       - "5112:5432"
