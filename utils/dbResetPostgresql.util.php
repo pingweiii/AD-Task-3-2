@@ -1,8 +1,6 @@
 <?php
 declare(strict_types=1);
 
-define('UTILS_PATH', __DIR__);
-
 // 1) Composer autoload
 require 'vendor/autoload.php';
 
@@ -18,23 +16,28 @@ $pdo = new PDO($dsn, $pgConfig['user'], $pgConfig['pass'], [
   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
 ]);
 
-// Just indicator it was working
-echo "Applying schema from database/user.model.sql…\n";
+// ——— Apply Schema Files ———
+$schemaFiles = [
+  'users'          => 'database/user.model.sql',
+  'meeting'       => 'database/meeting.model.sql',
+  'meeting_users'  => 'database/meeting_users.model.sql',
+];
 
-$sql = file_get_contents('database/user.model.sql');
-
-// Another indicator but for failed creation
-if ($sql === false) {
-  throw new RuntimeException("Could not read database/user.model.sql");
-} else {
-    echo "Creation Success from the database/user.model.sql";
+foreach ($schemaFiles as $tableName => $filePath) {
+  echo "Applying schema from {$filePath}…\n";
+  $sql = file_get_contents($filePath);
+  if ($sql === false) {
+    throw new RuntimeException("Could not read {$filePath}");
+  } else {
+    echo "Creation Success from {$filePath}\n";
+    $pdo->exec($sql);
+  }
 }
 
-// If your model.sql contains a working command it will be executed
-$pdo->exec($sql);
-
+// ——— Truncate Tables ———
 echo "Truncating tables…\n";
-foreach (['users'] as $table) {
+foreach (array_keys($schemaFiles) as $table) {
   $pdo->exec("TRUNCATE TABLE {$table} RESTART IDENTITY CASCADE;");
 }
+echo "Reset complete!\n";
 ?>
