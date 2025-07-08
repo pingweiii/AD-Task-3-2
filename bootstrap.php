@@ -8,4 +8,5 @@ define('TEMPLATES_PATH', realpath(BASE_PATH . '/components/templates'));
 define('STATICDATAS_PATH', realpath(BASE_PATH . '/staticDatas'));
 define('LAYOUTS_PATH', realpath(BASE_PATH . '/layouts'));
 define('ERRORS_PATH', realpath(BASE_PATH . '/errors'));
+define('PAGES_PATH', realpath(BASE_PATH . '/pages'));
 chdir(BASE_PATH);
