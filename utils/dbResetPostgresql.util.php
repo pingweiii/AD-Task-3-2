@@ -18,7 +18,7 @@ $pdo = new PDO($dsn, $pgConfig['user'], $pgConfig['pass'], [
 
 // ——— Apply Schema Files ———
 $schemaFiles = [
-  'users'          => 'database/user.model.sql',
+  'users'          => 'database/users.model.sql',
   'meeting'       => 'database/meeting.model.sql',
   'meeting_users'  => 'database/meeting_users.model.sql',
 ];
